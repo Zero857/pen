@@ -1,0 +1,5 @@
+after trying multiple methods, we come across "/admin.php" inside the source code 
+then we can insert that into the url of the website "https://url/admin.php
+then we copy the whole thing and use curl 
+but we find out that only local users can see it so we should try spoofing with it
+curl -XGET http:// url /admin.php -H 'X-Forwarded-For: 127.0.0.1'

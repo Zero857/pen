@@ -1,0 +1,9 @@
+after trying multiple methods, in inspect we located a file
+and it tells us about LFI vulnerability in "image_name"
+once we go back to the source file, we find out that the vulnerability is avoided 
+so we try using "//" instead of "/" 
+and with this we understand that the LFI vulnerability works
+so now we try finding the flag 
+image_name=..//..//..//etc/passwd
+image_name=..//tmp/flag
+

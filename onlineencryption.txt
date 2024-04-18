@@ -1,0 +1,5 @@
+once we open "8541" and take the value out of it
+we can use base64 
+then we copy it and find the flag with rot-13
+
+

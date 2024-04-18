@@ -1,0 +1,4 @@
+after trying multiple methods, we check the source code of the website 
+now we can try sending the flag.php value as POST start parameter through "guessing". 
+curl is a cmd line tool for transferring data with URL 
+and we get the flag by using curl 'ip/?start=' --data 'start=flag.php'
